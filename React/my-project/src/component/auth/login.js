@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import history from '../../history/history'
-
+import './style.css'
 
 class LOGIN extends Component {
     render() {
         return (
-            <div>
-                <h2>Log In</h2>
-                <button onClick={()=>{history.push('/')}}>Back</button>
+            <div className='login'>
+                <span>Log In</span>
+                <button className='button' onClick={()=>{history.push('/')}}>Back</button>
                 
             </div>
         )
